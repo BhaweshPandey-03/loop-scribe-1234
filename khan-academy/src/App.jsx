@@ -1,20 +1,11 @@
 import "./App.css";
 import { Provider } from "react-redux";
-import { store } from "./Redux/store";
-
-
-// import './App.css'
-import { useEffect, useState } from 'react'
 import { AllRoutes } from './AllRoutes/AllRoutes';
-import Navbar from './Components/Navbar/Navbar';
-
 import { BrowserRouter } from "react-router-dom";
-
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ChakraProvider } from "@chakra-ui/react";
-import AllRoutes from "./Allroutes/MainRoute";
-
+import store from "./Redux/store";
+import Navbar from "./components/Navbar";
 
 
 function App() {
