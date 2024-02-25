@@ -85,20 +85,22 @@ export const change_theme = () => {
 };
 export const getCollege = () => {
   return async (dispatch) => {
-    console.log("GET COLLEGE");
+   
     dispatch({ type: GET_COLLEGE_REQUEST });
     try {
       let data = await axios.get("http://localhost:8080/colleges");
-      console.log("COLLEGE DATA : ", data.data);
+     
       dispatch({
         type: GET_COLLEGE_SUCCESS,
         payload: { isLoading: false, colleges: data.data },
       });
-    } catch {}
+    } catch(err) {
+      console.log(err)
+    }
   };
 };
 export const set_cart_price = (price) => {
-  console.log("PRICE", price);
+ 
   return {
     type: UPDATE_CART_PRICE,
     payload: price,
@@ -109,13 +111,9 @@ export const getCourses = (search) => {
     dispatch({ type: GET_COURSES_REQUEST });
     try {
       if (search) {
-        // let data = await axios.get(
-        //   `http://localhost:8080/courses?courseTitle_like=${search}`
-        // );
-        console.log("Search", search);
+      
         let data = await axios.get(`${url}/courses?${search}`);
 
-        // let data = await axios.get(`${url}/courses?courseTitle_like=${search}`);
         console.log(`${url}/courses?courseTitle_like=${search}`);
         dispatch({
           type: GET_COURSES_SUCCESS,
@@ -123,7 +121,7 @@ export const getCourses = (search) => {
         });
       } else {
         let data = await axios.get(`${url}/courses`);
-        // let data = await axios.get(`http://localhost:8080/courses`);
+       
         dispatch({
           type: GET_COURSES_SUCCESS,
           payload: { isLoading: false, courses: data.data },
@@ -133,13 +131,13 @@ export const getCourses = (search) => {
   };
 };
 
-// const navigate = useNavigate();
+
 export const getLogged = (email, pass) => {
   return async (dispatch) => {
     dispatch({ type: CHANGE_LOGIN_REQUEST });
     try {
       let res = (await axios.get(`${url}/users`)).data;
-      console.log(res);
+     
 
       const user = res.find(
         (u) =>
