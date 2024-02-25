@@ -1,0 +1,192 @@
+#coursesPage {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+.filter {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.filterLabel {
+  margin: 5px 0 5px 10px;
+}
+.filterCheckBox {
+  width: fit-content;
+  margin: 5px 0 5px 10px;
+}
+#filterSection {
+  width: 25%;
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid black;
+}
+.courseCard {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.courseCard img {
+  width: 250px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+#searchInputDiv {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+#searchInput {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  width: 25%;
+  /* border: 1px solid; */
+}
+#searchButton {
+  background-color: #c2fbd7;
+  border-radius: 10px;
+  box-shadow: #1eb2a6 0px 1px 3px 0px;
+  color: #1eb2a6;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  border: 1px solid;
+}
+.courseImgPri {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 50px;
+}
+.courseDesc {
+  padding: 10px;
+  padding-left: 50px;
+  text-align: left;
+  width: 61%;
+}
+.courseDesc > div,
+.courseDesc > p,
+.courseDesc > span {
+  padding-left: 5px;
+}
+#searchInput {
+  width: 25%;
+  border: 1px solid;
+}
+.pagination button {
+  padding: 0 20px;
+}
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.courseAuthor {
+  font-size: 15px;
+  color: gray;
+}
+.level .courseDesc > div > p {
+  padding: 3px;
+}
+.paginationButtons {
+  background: #1eb2a6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #1a202c;
+  font-family: Inter, sans-serif;
+  height: 30px;
+  padding: 0 24px;
+  margin: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.coursePriceSection {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35%;
+}
+.coursePrice {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1eb2a6;
+  margin-top: 30px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.courseTitle {
+  font-weight: bold;
+}
+#resultsCount {
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+#filters {
+  width: 21.5%;
+}
+
+#courses {
+  width: 76.5%;
+}
+.registerButton {
+  background-color: #1eb2a6;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1eb2a6 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  margin: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: transform 0.15s;
+  font-size: 18px;
+}
+.registerButton a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.registerButton:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.registerButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1eb2a6 0 -3px 0 inset;
+  scale: 1.01;
+}
+
+.registerButton:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  scale: 1.01;
+}
