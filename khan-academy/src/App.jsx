@@ -2,10 +2,11 @@ import "./App.css";
 
 
 
-import AllRoutes from "./AllRoutes/AllRoutes";
+import AllRoutes from './AllRoutes/AllRoutes'
 
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+
 function App() {
   return (
     
@@ -17,7 +18,7 @@ function App() {
             <AllRoutes />
 
             <Footer />
-        
+   
           </div>
 
      

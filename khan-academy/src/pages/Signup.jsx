@@ -71,7 +71,7 @@ const Signup = () => {
           type="button"
           id="submitBtn"
           className="signuptBtn"
-          onClick={handleSignup}
+          // onClick={handleSignup}
         >Sign Up</button>
       <p className='donotHAcc'>Already have an account? <Link to="/login">Log in</Link></p>
       </form>
