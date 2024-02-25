@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/Menubar.css";
 // import '../styles/newMenu.css';
-import logo from "../logo.png";
+import logo from "../data/logo.png";
 import { IoMenu } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { useDisclosure, useToast } from "@chakra-ui/react";

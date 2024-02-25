@@ -2,7 +2,7 @@
 
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
-import logo from "../logo.png";
+import logo from "../data/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

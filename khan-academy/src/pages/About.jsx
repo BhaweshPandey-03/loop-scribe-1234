@@ -1,10 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import "./css/about.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import aboutImg from '../images/about.png'
-import learnImg from '../images/learnAnything.png'
+import aboutImg from '../data/about.png'
+import learnImg from '../data/learnAnything.png'
 const speakersData = [
   {
     id: 1,

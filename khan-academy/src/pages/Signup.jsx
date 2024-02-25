@@ -1,8 +1,8 @@
 // Signup.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../styles/Signup.css';
-import logo from '../logo.png';
-import vdo from '../loginvdo.mp4'; 
+import logo from '../data/logo.png';
+import vdo from '../data/loginvdo.mp4'; 
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
